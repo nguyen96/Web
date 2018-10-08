@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mr.Chu</title><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar {
+     /* margin-bottom: 0;*/
+    /*  border-radius: 0;*/
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: auto}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      
+     /*<!-- background-color: #f1f1f1;-->*/
+      height: 100%;
+	  margin-top:10px;
+	 /* height:auto;*/
+	 /* border:1px solid #CCC;*/
+	  width:auto;
+    }
+    
+     Set black background color, white text and some padding 
+   .footer {
+	background-color: #000;
+	color: #D6D6D6;
+	/* padding: 15px;*/
+	margin-top: 25px;
+	border: 1px solid #999;	  /*clear:none;*/
+	  /*float:left;*/
+    }
+    
+     On small screens, set height to 'auto' for sidenav and grid 
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+       /* padding: 15px;*/
+      }
+      .row.content {height:auto;} 
+    }
+ #top {
+	 height: 120px;
+	 width:auto;
+	 border:1px solid #000;
+	 margin-bottom:25px;
+	 padding-top:25px;
+	 }
+  #submit{background-color:/*#F39 #FF3E3E;*/ #e60f1e;color:#FFF;width:100px;height:35px;border:1px solid #F00;margin-top:20px;}
+.navbar-brand{margin-left:30px;}
+
+<!--.container-fluidt{background-color:/*#e60f1e;*/}-->
+#myNavbar{background-color:/*#FF3E3E;*//*#e60f1e;*/ #063;/* border: 1px solid #F00; #e60f1e*/ }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background-color:#003300;;color:#FFF;} <!--width:140px;
+-->
+<!--#menu.navbar-nav.active{background-color:#900;}-->
+
+<!--#e60f1e;-->
+#top a{text-decoration:none;}
+#form1{margin-left:60px;width:430px;height:35px;border:1px solid #F00;margin-top:20px;}
+#wrapper{
+
+	width : 1180px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+	}
+#myNavbar ul li a{color:#FFF;}
+		
+#myNavbar ul li: hover{ background-color:#900;}
+.navbar-inverse.navbar-nav>.active>a: hover{color:#000;/*background-color:#C39;*/}
+.navbar-nav>li {position:relative;} 
+
+#menu ul li {
+	width: 150px;
+	font-size:16px;
+	position: relative;
+	text-align:center;
+}
+#menu ul{list-style:none;}
+#menu ul li:hover { background-color:#F66;}
+#tintuc li {position:absolute;height:40px;float:left;padding-top:10px;}
+#tintuc li a{text-decoration:none;}
+#tintuc {display:none;
+	position: absolute;
+	background-color: #063;
+	z-index: 90;
+	width: 180px;
+	padding:2px 0 2px 18px;
+}
+
+#menu ul li:hover #tintuc{display:block;}
+#menu ul li:hover #tintuc li{width:140px;}
+
+#danhmuc{width:280px; height:524px; /*border:1px solid #999;*/}
+
+ 
+
+    #muc{height:47px;padding-top:12px;background-color: #063;color:#FFF;font-size:16px;}
+    #danhmuc  li{list-style:none;text-align:left;height:43px;padding-left:10px;padding-top:10px;position:relative;border-bottom:1px solid #CCC;}
+    
+	#danhmuc  li a{text-decoration:none;/*<!-- display: inline-block;-->*/}
+	#danhmuc  li:hover {background-color:#F66;color:#FFF;width:280px;}
+	#danhmuc  li a:hover{color:#FFF;}
+	#danhmuc li a span{color:#666666;}
+    #danhmuc li a span:hover{color:#FFF;}
+	  
+	#danhmuc #han li a{color:#FFF;}
+    #danhmuc #han{display:none;position:absolute;left:100%;padding-left:20px;background-color:#F99;width:299px;}
+     #danhmuc li:hover>#han{display:block;}
+	 #danhmuc ul li:hover #han li{width:270px;}
+	#danhmuc #han li a:hover{color:#F99;}
+	
+<!--bắt đầu css chi tiết-->	
+#khungchitiet {
+	border:thin #000 solid;
+	margin:auto;
+	width:350px;
+	height:auto;
+	
+	
+	}
+#khungthongtin {
+	border:thin #000 solid;
+	margin:auto;
+	width:auto;
+	padding-left:20px;
+	padding-right:20px;
+	clear:both; 	
+	}
+#trai {
+	width:350px;
+	margin:20px 10px 20px 20px;
+	border:thin #000 solid;
+	float:left;
+	height:500px;
+	}
+#phai {
+	width:450px;
+	float:right;
+	margin:20px 20px 20px 10px;
+	border:thin #000 solid;
+	height:500px;
+	padding-left:20px;
+	padding-top:50px;
+	line-height:45px;
+	font-size:24px;
+	}
+#button {
+	background-color:#F4574C;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;	
+	font-size:24px;
+	color:#FFF;
+	width:300px;
+	height:50px;
+	margin:50px 0 10px 50px;
+	}
+#thongtin{
+	border-bottom:#000 thin solid;
+	margin-bottom:20px;
+	
+	}
+	
+<!--kết thúc css chi tiết-->
+	<!--bắt đầu css bìa-->
+	
+#tuctucsao{height:400px;width:auto;clear:none;}
+   #tintuctrai{height:380px;width:540px;float:left;background-image:url(../../ttcmwebanh/PENTAGON.png);
+                           background-repeat:no-repeat;margin-right:10px;padding-left:10px;margin-top:14px;}
+   #tintuctrai p a{text-decoration:none;}
+   #tintuctrai p a:hover{color:#ec2c1e;}
+    #tintucphai{height:380px;width:612px;float:left;margin-top:14px;}
+
+#noidung{height:100px;width:auto;clear:both;padding-top:40px;}
+	
+	  #tin1{height:112px;width:auto;}
+	   #tin2{height:112px;width:auto;margin-top:20px;}
+	    #tin3{height:112px;width:auto;margin-top:20px;}
+		   #tinhinh{width:170px;height:112px;float:left;}
+		   #tinchu{width:428px;height:112px;float:left;margin-left:10px;}
+           #tinchu p{padding-left:20px;}
+		   #tinchu p a{text-decoration:none;}
+
+#hinh{height:524px;;width:830px;margin-left:20px;/*border:1px solid #999;*/float:left;margin-top:10px;}
+
+.footer{height:300px;width:auto;clear:none;line-height:22px; margin-top:30px;background-color:#333;color:#FFF;}
+   #footer1{width:210px;height:270px;float:left;margin-left:170px;border-bottom:1px solid #CCC; }
+    #footer2{width:210px;height:270px;float:left;border-bottom:1px solid #CCC;} 
+	 #footer3{width:210px;height:270px;float:left;border-bottom:1px solid #CCC; }
+	  #footer4{width:210px;height:270px;float:left;border-bottom:1px solid #CCC; }
+	   #footer5{width:auto;height:270px;float:left; }
+#hethong{height:300px;width:auto;background-color:#333;color:#FFF;}
+    #hethong1{width:390px;height:250px;float:left;margin-left:170px;}
+	 #hethong2{width:390px;height:250px;float:left;}
+	  #hethong3{width:390px;height:250px;float:left;}
+	     #hethong1 p{padding-left:45px;}
+		  #hethong2 p{padding-left:45px;}
+		   #hethong3 p{padding-left:45px;}
+	<!--kết thúc css bìa-->
+	
+</style>	
+	<body>
+    <div id="top">
+
+ <form >
+ <span style="margin-left:180px;margin-bottom: 10px;"> <img src="../../ttcmwebanh/photo.jpg" height="70px" width="200px"  /></span>
+  <input type="text" id="form1"  placeholder="Tìm kiếm..." />
+  <input id="submit" type="submit" value="Tìm kiếm" name="btnsubmit"  />
+    <a href="../frmDangKy.html"><span style="margin-left:50px;color:#000;"><img src="../khung/khung/webgiaydephinh/ben-franklins-key.png"  height="20px" width="20px" /> Đăng ký</span></a> 
+     <a href="../frmDangNhap.html"><span style="margin-left:30px;color:#000;"><img src="../khung/khung/webgiaydephinh/User_No-Frame.png" height="20px" width="20px"/> Đăng nhập</span></a>
+    <a href="#"><span style="margin-left:30px;color:#000;"><img src="../khung/khung/webgiaydephinh/giohang.jpg"  height="20px" width="20px"/> Giỏ hàng<span style="color:#F00">(0)</span></span></a>
+</form>
+<p style="margin-left:460px;padding-bottom:10px;"><strong>Gợi ý từ khóa: </strong><i style="color:#333;"> Tên nhóm nhạc,Tên đĩa CD,...</i></p>
+  
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluidt">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    <p style="margin-left:300px;"><!--<a class="navbar-brand" href="#">Rossy Store</a>--></p>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <div id="menu">
+      <ul class="nav navbar-nav">
+      
+        <li class="active"><a href="#">Trang chủ</a></li>
+        <li ><a href="#">Tin tức</a></li>
+       <!--data-toggle="dropdown"--> 
+        <li ><a  href="#">Sản phẩm</a>
+        <ul id="tintuc">
+        
+          
+                                
+        <li ><a href="#">ALBUM EXO</a></li>
+        <li ><a href="#">ALBUM GOT7</a></li> 
+        <li  ><a href="#">ALBUM BIGBANG</a></li>
+        <li  ><a href="#">ALBUM EXO</a></li>
+        <li ><a href="#">ALBUM T-ARA</a></li>
+        <li ><a href="#">ALBUM BEAST</a></li>
+        <li  ><a href="#">ALBUM DBSK</a></li>
+        </ul>
+               
+        </li>
+         <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Liên hệ</a>
+       
+        </ul>
+        </li>
+       
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>-->
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  <div id="wrapper">
+<div class="container-fluid "> <!--text-center -->  
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    
+    <div id="danhmuc">
+    <div id="muc"><span style="padding-left:45px;">DANH MỤC SẢN PHẨM</span></div>
+   <!-- <ul>
+     -->
+     <li><a href="#"> <img src="../../ttcmwebanh/dia.png" height="20px" width="20px"/><span style="padding-left:10px;">
+     ALBUM HÀN<span style="padding-left:130px;"> ></span> </span></a>
+     <ul id="han">
+     <li><a href="#">IKON</a></li>
+     <li><a href="#">TWICE</a></li>
+     <li><a href="#">APINK</a></li>
+     <li><a href="#">VELVET</a></li>
+     <li><a href="#">AOA</a></li>
+     <li><a href="#">MAMAMOO</a></li>
+     
+     </ul>
+    
+   
+     
+     </li>
+     <li><a href="#"><img src="../../ttcmwebanh/got17.png" height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM GOT7</span></a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/exo.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM EXO</span></a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/bts.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM BTS </span></a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/seven.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM SEVENTEEN</span></a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/snsd.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM SNSD</span> </a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/lightstick.png"   height="20px" width="20px"/><span style="padding-left:10px;"> 
+     LIGHT STICK</span></a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/poster.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      POSTER</span></a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/photobook.png"  height="20px" width="20px" /><span style="padding-left:10px;"> 
+    OFFICIAL GOODS<span style="padding-left:95px;"> ></span></span></a>
+    <ul id="han">
+     <li><a href="#">LIGHT STICK</a></li>
+     <li><a href="#">PHOTO BOOK</a></li>
+    </ul>
+    
+    
+    
+    
+    </li>
+     <li><a href="#"><img src="../../ttcmwebanh/bosuutap.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      BỘ SƯU TẬP </span></a></li>
+     <li><a href="#"><img src="../../ttcmwebanh/sanphamkhac.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+  SẢN PHẨM KHÁC </span></a></li>
+   
+   </div>
+    </div><!--/* kết thúc danh mục*/-->
+    <!--bắt đầu chi tiết-->
+    <div id="khungchitiet">
+    	<div id="trai">
+        
+        <!--CHƯA BỎ HÌNH-->
+        
+        <img src="#" width="350px" height="500px" />
+        </div>
+        <div id="phai">
+        	<p><b><h3>Mr.Chu - Apink</h3></b></p>
+            <li>Giá bán : <span style="color:#F00";>800,000 đ</span></li>
+            <li>Mã sản phẩm : apm5</li>
+          	<li>Ngày phát hành : 25/11/2016</li>
+            <li>Số lượng : 
+            
+              <input type="text" name="soluong" id="soluong" style="width:250px" ;/>
+              
+           	
+         	</li>
+            <p>
+      			<input type="submit" style="text-align:center;" name="button" id="button" value="Thanh toán" />
+    		</p>
+        </div>
+    </div>
+    <div id="khungthongtin">
+    	<p><b><h2>Thông tin sản phẩm</h2></b></p>
+        <hr />
+        
+        <p>Album size 200 x 200 mm</p>
+<p>CD 12 bài (Cover 1 trong 3 mẫu)</p>
+<p>Photobook 96 trang</p>
+<p>Random Photocard (1 trong 6 mẫu)</p>
+<p>Special Numbering Card (firstpress only)</p>
+<p>Special Event: Lucky Ticket (firstpress only / ngẫu nhiên ko phải album nào cũng có)</p>
+<p>Poster (limited chỉ đợt 1 mới chắc chắn có)</p>
+
+
+
+ 
+		<p><h3>Track List</h3></p>
+
+<p>01. Dear (Whisper) (CD ONLY)</p>
+<p>02. 별의 별  </p>
+<p>03. Miss U </p>
+<p>04. NoNoNo (Ballad Ver.)</p>
+<p>05. 내가 설렐 수 있게 (R&B Ver.)</p>
+<p>06. LUV (Ballad Ver.) </p>
+<p>07. 흔한 일</p>
+<p>08. 잃어버린 조각</p>
+<p>09. 그 봄날, 이 가을</p>
+<p>10. Mr. Chu (Inst.)</p>
+<p>11. 동화 같은 사랑 (Inst.)</p>
+<p>12. 4월 19일 (Inst.)</p>
+
+      <hr />
+        
+    </div>
+    <!--kết thúc chi tiết-->
+    <!--bắt đầu bìa-->
+   <div id="tintucsao">
+     <p style="text-align:center;font-size:18px;padding-bottom:10px;padding-top:10px;" >
+     <span style="color:#ccc;">------------------------------------------------------------------------</span><b>TIN TỨC CỦA SAO</b>
+     <span style="color:#ccc;">------------------------------------------------------------------------</span></p>
+       <div id="tintuctrai"><p style="padding-top:260px;font-size:24px;color:#006;padding-left:20px;">
+       <a href="#"><b>Cube Entertainment sẽ cho ra mắt nhóm PENTAGON trong năm 2016.</b></a> </p>
+       <p style="color:#333;font-size:16px;padding-left:37px;color:#666;"><b>Thứ 2 ,06/12/2015</b></p>
+       
+       </div> 
+       <!--kết thúc tin tức trái-->
+       <div id="tintucphai">
+       <div id="tin1">
+       <div id="tinhinh"><a href="#"><img src="../../ttcmwebanh/traogiai.png" height="112px" width="170px" /></a></div>
+       <div id="tinchu">
+        <p style="color:#003;"><a href="#">MMA 2017: WINNER ở đâu và EXO đã làm gì để được nhận giải Nghệ sĩ của năm?</a></p>
+        <p style="padding-left:50px;"><img src="../../ttcmwebanh/dongho.png" height="20" width="20" />   4/11/2017</p>
+       </div>
+       </div> <!--kết thúc tin 1-->
+        <div id="tin2">
+         <div id="tinhinh"><a href="#"><img src="../../ttcmwebanh/gdragon.png" height="112px" width="170px" /></a></div>
+       <div id="tinchu">
+       <p style="color:#006;"><a href="#">  Xôn xao về poster thông báo G-Dragon (Big Bang) diễn tại sân vận động Mỹ Đình vào tháng 12</a></p>
+        <p style="padding-left:50px;"><img src="../../ttcmwebanh/dongho.png" height="20" width="20" />  1/9/2017</p>
+       
+       </div>
+        
+        </div> <!--kết thúc tin 2-->
+         <div id="tin3">
+          <div id="tinhinh"><a href="#"><img src="../../ttcmwebanh/han.png" height="115px" width="170px" /></a></div>
+       <div id="tinchu"><p style="color:#006;"><a href="#">Danh sách các ca khúc được Kpop fan ưa chuộng nhất trong năm 2017</a></p>
+        <p style="padding-left:50px;"><img src="../../ttcmwebanh/dongho.png" height="20" width="20" />  5/12/2017</p>
+       </div>
+         </div> <!--kết thúc tin 3-->
+       
+       </div> <!--kết thúc tin tức phải-->
+     </div> <!--kết thúc tin tức sao-->
+     
+      <div id="noidung">
+   <span style="padding-left:35px;"><img src="../../ttcmwebanh/giao.png" height="50px" width="50px" /></span>
+   <span style="padding-left:10px;padding-right:75px;font-size:16px;"><b>Giao hàng toàn quốc</b></span>
+   <span><img src="../../ttcmwebanh/24.png" height="50px" width="50px"/></span>
+   <span style="padding-left:10px;padding-right:75px;font-size:16px;"><b>Hoạt động 24h</b></span>
+   <span><img src="../../ttcmwebanh/thanh.png" height="50px" width="50px"/></span>
+   <span style="padding-left:10px;padding-right:75px;font-size:16px;"><b>Thanh toán tiện lợi</b></span>
+   <span><img src="../../ttcmwebanh/hotro.png" height="50px" width="50px"/></span>
+   <span style="padding-left:10px;padding-right:30px;font-size:16px;"><b>Hỗ trợ 24/5: 098 765 4321</b></span>
+    </div><!-- kết thúc nội dung-->
+    
+    </div>
+    </div>
+ </div>  
+<div class="footer">
+  <div id="footer1">
+    <p style="font-size:14px;padding-top:30px;padding-left:20px;"><b>VỀ CHÚNG TÔI</b></p>
+    <p style="padding-left:20px;">Giới thiệu</p>
+    <p style="padding-left:20px;">Chính sách</p>
+     <p style="padding-left:20px;">Liên hệ</p>
+      <p style="padding-left:20px;">Điều khoản</p>
+  </div> <!--kết thúc footer1-->
+  <div id="footer2">
+      <p style="font-size:14px;padding-top:30px;padding-left:20px;"><b>HỖ TRỢ KHÁCH HÀNG</b></p>
+        <p style="padding-left:20px;">Hướng dẫn đặt hàng</p>
+      <p style="padding-left:20px;">Hướng dẫn thanh toán</p>
+      <p style="padding-left:20px;">Chính sách vận chuyển</p>
+       <p style="padding-left:20px;">Chính sách đổi trả</p>
+  </div> <!--kết thúc footer2-->
+  <div id="footer3">
+      <p style="font-size:14px;padding-top:30px;padding-left:20px;"><b>GIỚI THIỆU</b></p>
+      <p style="padding-left:20px;">Album hàn</p>
+      <p style="padding-left:20px;">Poster</p>
+      <p style="padding-left:20px;">Light stick</p>
+      <p style="padding-left:20px;">Bộ sưu tập</p>
+      <p style="padding-left:20px;">Sản phẩm khác</p>
+  </div> <!--kết thúc footer3-->
+  <div id="footer4">
+       <p style="font-size:14px;padding-top:30px;padding-left:20px;"><b>ĐẶT HÀNG 24H</b></p>
+       
+       <p style="padding-left:20px;">Đặt hàng nhanh :</p>
+       <p style="padding-left:20px;font-size:20px;color:#F90;">01659329688</p>
+       <p style="padding-left:20px;">Phục vụ tất cả ngày trong tuần</p>
+       <p style="padding-left:20px;">(8h00 am- 22h00 pm)</p>
+  </div> <!--kết thúc footer4-->
+  <div id="footer5">
+       <p style="padding-top:30px;padding-left:20px;"><b>THEO DÕI TRÊN FANPAGE</b></p>
+      <p style="padding-left:20px;"><img src="../../ttcmwebanh/fanp.png" height="200px" width="auto" /></p>
+  </div> <!--kết thúc footer5-->
+
+</div>
+<div id="hethong">
+<p style="font-size:20px;text-align:center;"><b>HỆ THỐNG CỬA HÀNG</b></p>
+<div id="hethong1">
+<p></p>
+<img src="../../ttcmwebanh/check.png" width="35" height="40" /><span style="padding-left:10px;color:#F90;"><b>KPOP NGUYỄN CHÍ THANH</b></span>
+<p></p>
+<p>154 Nguyễn Chí Thanh, Đống Đa, Hà Nội</p>
+<p>Giờ mở cửa: (8h00 am - 22h00 pm)</p>
+<p>Hotline: 0912345678</p>
+</div> <!--kết thúc hệ thống 1-->
+<div id="hethong2">
+<p></p>
+<img src="../../ttcmwebanh/check.png" width="35" height="40" /><span style="padding-left:10px;color:#F90;"><b>KPOP NGÔ QUYỀN</b></span><p></p>
+<p>290 Đội Cấn, Ba Đình, Hà Nội</p>
+<p>Giờ mở cửa: (8h00 am - 22h00 pm)</p>
+<p>Hotline: 0988999666</p>
+</div><!--kết thúc hệ thống 2-->
+<div id="hethong3">
+<p></p>
+<img src="../../ttcmwebanh/check.png" width="35" height="40" /><span style="padding-left:10px;color:#F90;"><b>KPOP LÊ THÁNH TÔN</b></span><p></p>
+<p>58 Tân Canh Phường 1 Tân Bình TP HCM</p>
+<p>Giờ mở cửa: (8h00 am - 22h00 pm)</p>
+<p>Số điện thoại: 01267.693.602</p>
+</div><!--kết thúc hệ thống 3-->
+
+
+</div>
+</body>
+</html>
+
+	<!--kết thúc bìa-->    
+    
+    
+    
+	
+</div>
+</body>
+</html>

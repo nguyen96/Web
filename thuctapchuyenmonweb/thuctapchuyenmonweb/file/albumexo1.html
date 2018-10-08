@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Album EXO</title><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar {
+     /* margin-bottom: 0;*/
+    /*  border-radius: 0;*/
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: auto}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      
+     /*<!-- background-color: #f1f1f1;-->*/
+      height: 100%;
+	  margin-top:10px;
+	 /* height:auto;*/
+	 /* border:1px solid #CCC;*/
+	  width:auto;
+    }
+    
+     Set black background color, white text and some padding 
+   .footer {
+	background-color: #000;
+	color: #D6D6D6;
+	/* padding: 15px;*/
+	margin-top: 25px;
+	border: 1px solid #999;	  /*clear:none;*/
+	  /*float:left;*/
+    }
+    
+     On small screens, set height to 'auto' for sidenav and grid 
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+       /* padding: 15px;*/
+      }
+      .row.content {height:auto;} 
+    }
+ #top {
+	 height: 120px;
+	 width:auto;
+	 border:1px solid #000;
+	 margin-bottom:25px;
+	 padding-top:25px;
+	 }
+  #submit{background-color:/*#F39 #FF3E3E;*/ #e60f1e;color:#FFF;width:100px;height:35px;border:1px solid #F00;margin-top:20px;}
+.navbar-brand{margin-left:30px;}
+
+<!--.container-fluidt{background-color:/*#e60f1e;*/}-->
+#myNavbar{background-color:/*#FF3E3E;*//*#e60f1e;*/ #063;/* border: 1px solid #F00; #e60f1e*/ }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{background-color:#003300;;color:#FFF;} <!--width:140px;
+-->
+<!--#menu.navbar-nav.active{background-color:#900;}-->
+
+<!--#e60f1e;-->
+#top a{text-decoration:none;}
+#form1{margin-left:60px;width:430px;height:35px;border:1px solid #F00;margin-top:20px;}
+#wrapper{
+
+	width : 1180px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000;
+	}
+#myNavbar ul li a{color:#FFF;}
+		
+#myNavbar ul li: hover{ background-color:#900;}
+.navbar-inverse.navbar-nav>.active>a: hover{color:#000;/*background-color:#C39;*/}
+.navbar-nav>li {position:relative;} 
+
+#menu ul li {
+	width: 150px;
+	font-size:16px;
+	position: relative;
+	text-align:center;
+}
+#menu ul{list-style:none;}
+#menu ul li:hover { background-color:#F66;}
+#tintuc li {position:absolute;height:45px;float:left;padding-top:10px;font-size:12px;}
+#tintuc li a{text-decoration:none;}
+#tintuc {display:none;
+	position: absolute;
+	background-color: #063;
+	z-index: 90;
+	width: 180px;
+	padding:0px 0 0px 0px;
+	
+}
+
+#menu ul li:hover #tintuc{display:block;}
+#menu ul li:hover #tintuc li{width:180px;}
+
+#danhmuc{width:280px; height:524px; /*border:1px solid #999;*/}
+
+ 
+
+    #muc{height:47px;padding-top:12px;background-color: #063;color:#FFF;font-size:16px;}
+    #danhmuc  li{list-style:none;text-align:left;height:43px;padding-left:10px;padding-top:10px;position:relative;border-bottom:1px solid #CCC;}
+    
+	#danhmuc  li a{text-decoration:none;/*<!-- display: inline-block;-->*/}
+	#danhmuc  li:hover {background-color:#F66;color:#FFF;width:280px;}
+	#danhmuc  li a:hover{color:#FFF;}
+	#danhmuc li a span{color:#666666;}
+    #danhmuc li a span:hover{color:#FFF;}
+	  
+	#danhmuc #han li a{color:#FFF;}
+    #danhmuc #han{display:none;position:absolute;left:100%;padding-left:20px;background-color:#F99;width:280px;padding:0px 0 0px 0px;}
+     #danhmuc li:hover>#han{display:block;}
+	 #danhmuc ul li:hover #han li{width:270px;}
+	#danhmuc #han li a:hover{color:#F99;}
+	#khungalbum{
+	width: 830px;
+	height: auto;
+	margin-left:38px;
+	float:left;
+	}
+#vitri{
+	
+}
+#vitri a{
+	color: #8B8B8B;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+#tentrang{
+	width: 830px;
+	height: auto;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 24px;
+	color: #8B8B8B;
+	text-align: center;
+	line-height: 20px;
+}
+#tensp1
+{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 15px;
+}
+#tensp2{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;
+	}
+#tensp3{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;
+	}
+#tensp4{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;	}
+#tensp5{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;	}
+#tensp6{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;
+	
+	}
+#tensp7{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;
+	
+	}
+	#tensp8{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;
+	
+	}
+	#tensp9{
+	height: 350px;
+	width: 220px;
+	float: left;
+	margin: 28px;
+	text-align: center;
+	line-height: 25px;
+	}
+	#pre
+	{
+		float:left;
+	margin-left: 5px;
+	height: auto;
+	width: 50px;
+	}
+	#sotrang{
+			float:left;
+	width: 730px;font-size:16px;
+}
+
+#chuyentrang{
+	clear: both;
+	
+	background-color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	color: #7D7D7D;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+#chuyentrang a{
+	text-decoration: none;
+	color: #7D7D7D;font-size:16px;	
+}
+#chuyentrang a:hover{
+	color: #30F;		
+}
+#tensp1 a
+{
+	text-decoration: none;
+	color: #000;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: 300;
+}
+#tensp2 a
+{
+	text-decoration: none;
+	color: #191919;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+#tensp3 a
+{
+	text-decoration: none;
+	color: #191919;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+#tensp4 a
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #191919;
+}
+#tensp5 a
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #191919;
+}
+#tensp6 a
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #191919;
+}
+#tensp7 a
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #191919;
+}
+#tensp8 a
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #191919;
+}
+#tensp9 a
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #191919;
+}
+#tensp1 a:hover
+{
+	color: #03F;
+}
+#tensp2 a:hover
+{
+	color: #03F;
+}
+#tensp3 a:hover
+{
+	color: #03F;
+}
+#tensp4 a:hover
+{
+	color: #03F;
+}
+#tensp5 a:hover
+{
+	color: #03F;
+}
+#tensp6 a:hover
+{
+	color: #03F;
+}
+#tensp7 a:hover
+{
+	color: #03F;
+}
+#tensp8 a:hover
+{
+	color: #03F;
+}
+#tensp9 a:hover
+{
+	color: #03F;
+}
+a.linkopacity img {
+	filter:alpha(opacity=50);
+
+-moz-opacity: 1.0;
+
+opacity: 1.0;
+
+-khtml-opacity: 1.0;
+
+
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s; 
+}
+a.linkopacity img:hover{
+	-webkit-transform: scale(1.03); 
+	-moz-transform: scale(1.03);
+	-o-transform: scale(1.03);
+	box-shadow:0px 0px 10px #000099; Đổ bóng bằng CSS3
+	-webkit-box-shadow: 0px 0px 30px white;
+	-moz-box-shadow: 0px 0px 30px white;
+	opacity: 0.9;
+}
+</style>	
+	<body>
+    <div id="top">
+
+ <form >
+ <span style="margin-left:180px;margin-bottom: 10px;"> <img src="../ttcmwebanh/loo.png" height="70px" width="200px"  /></span>
+  <input type="text" id="form1"  placeholder="Tìm kiếm..." />
+  <input id="submit" type="submit" value="Tìm kiếm" name="btnsubmit"  />
+    <a href="#"><span style="margin-left:50px;color:#000;"><img src="../ttcmwebanh/ben-franklins-key.png"  height="20px" width="20px" /> Đăng ký</span></a> 
+     <a href="#"><span style="margin-left:30px;color:#000;"><img src="../ttcmwebanh/User_No-Frame.png" height="20px" width="20px"/> Đăng nhập</span></a>
+    <a href="#"><span style="margin-left:30px;color:#000;"><img src="../ttcmwebanh/giohang.jpg"  height="20px" width="20px"/> Giỏ hàng<span style="color:#F00">(0)</span></span></a>
+</form>
+<p style="margin-left:460px;padding-bottom:10px;"><strong>Gợi ý từ khóa: </strong><i style="color:#333;"> Tên nhóm nhạc,Tên đĩa CD,...</i></p>
+  
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluidt">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    <p style="margin-left:300px;"><!--<a class="navbar-brand" href="#">Rossy Store</a>--></p>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <div id="menu">
+      <ul class="nav navbar-nav">
+      
+        <li class="active"><a href="trangchu.html">Trang chủ</a></li>
+        <li ><a href="tintuc.html">Tin tức</a></li>
+       <!--data-toggle="dropdown"--> 
+        <li ><a  href="#">Sản phẩm</a>
+        <ul id="tintuc">
+        
+          
+                                
+        <li ><a href="albumexo.html">ALBUM EXO</a></li>
+        <li ><a href="albumgot7.html">ALBUM GOT7</a></li> 
+        <li  ><a href="albumbb.html">ALBUM BIGBANG</a></li>
+        <li  ><a href="albumexid.html">ALBUM EXID</a></li>
+        <li ><a href="albumtara.html">ALBUM T-ARA</a></li>
+        <li ><a href="albumbeast.html">ALBUM BEAST</a></li>
+        <li  ><a href="albumdbsk.html">ALBUM DBSK</a></li>
+        </ul>
+               
+        </li>
+         <li><a href="gioithieu.html">Giới thiệu</a></li>
+        <li><a href="lienhe.html">Liên hệ</a>
+       
+        </ul>
+        </li>
+       
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span></a></li>-->
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  <div id="wrapper">
+<div class="container-fluid "> <!--text-center -->  
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    
+    <div id="danhmuc">
+    <div id="muc"><span style="padding-left:45px;">DANH MỤC SẢN PHẨM</span></div>
+   <!-- <ul>
+     -->
+     <li><a href="#"> <img src="../ttcmwebanh/dia.png" height="20px" width="20px"/><span style="padding-left:10px;">
+     ALBUM HÀN<span style="padding-left:130px;"> ></span> </span></a>
+     <ul id="han">
+     <li><a href="albumikon.html">IKON</a></li>
+     <li><a href="albumtwice.html">TWICE</a></li>
+     <li><a href="albumapink.html">APINK</a></li>
+     <li><a href="albumvelvet.html">VELVET</a></li>
+     <li><a href="albumaoa.html">AOA</a></li>
+     <li><a href="albummamamo.html">MAMAMOO</a></li>
+     
+     </ul>
+    
+   
+     
+     </li>
+      <li><a href="albumgot7.html"><img src="../ttcmwebanh/got17.png" height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM GOT7</span></a></li>
+     <li><a href="albumexo.html"><img src="../ttcmwebanh/exo.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM EXO</span></a></li>
+     <li><a href="albumbts.html"><img src="../ttcmwebanh/bts.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM BTS </span></a></li>
+     <li><a href="albumseventeen.html"><img src="../ttcmwebanh/seven.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM SEVENTEEN</span></a></li>
+     <li><a href="albumsnsd.html"><img src="../ttcmwebanh/snsd.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      ALBUM SNSD</span> </a></li>
+     <li><a href="lighstick.html"><img src="../ttcmwebanh/lightstick.png"   height="20px" width="20px"/><span style="padding-left:10px;"> 
+     LIGHT STICK</span></a></li>
+     <li><a href="poster/html"><img src="../ttcmwebanh/poster.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      POSTER</span></a></li>
+     <li><a href="photobook.html"><img src="../ttcmwebanh/photobook.png"  height="20px" width="20px" /><span style="padding-left:10px;"> 
+    OFFICIAL GOODS<span style="padding-left:95px;"> ></span></span></a>
+    <ul id="han">
+     <li><a href="photobook.html">PHOTO BOOK</a></li>
+     <li><a href="#">DOLL</a></li>
+    </ul>
+    
+    
+    
+    
+    </li>
+     <li><a href="#"><img src="../ttcmwebanh/bosuutap.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+      BỘ SƯU TẬP </span></a></li>
+     <li><a href="#"><img src="../ttcmwebanh/sanphamkhac.png"  height="20px" width="20px" /><span style="padding-left:10px;">
+  SẢN PHẨM KHÁC </span></a></li>
+   
+   
+   </div>
+    </div><!--/* kết thúc danh mục*/-->
+    
+	<div id="khungalbum">
+	<div id="vitri">
+    <br/>
+    	<a href="trangchu.html">Trang Chủ   </a> / <a href="#">   Album EXO</a>
+    </div>
+    <div id="tentrang">
+    	<p> ALBUM EXO<hr  width="20%" align="center" /></p><br/>
+    </div><br/>
+  
+      <div id="tensp3"><a href="#" class="linkopacity">
+            <img src="../img/exo1.jpg" width="200px" height="200px" />
+			XOXO - EXO<br />800.000đ<br />
+                    </a>
+            <a href="dương link trang chon sp hoc sp da dk bỏ vào gio" ><br/><img src="../img/nutmua.jpg"width="120px" height="40px" />
+            </a>
+      </div>
+  <div id="tensp4"><a href="#" class="linkopacity">
+         <img src="../img/exo5.jpg"  width="200px" height="200px" />
+        4th Album<br />Chinese ver +Poster<br />900.000đ<br/>
+          </a>
+            <a href="dương link trang chon sp hoc sp da dk bỏ vào gio" ><br/><img src="../img/nutmua.jpg"width="120px" height="40px" />
+            </a>
+  </div>
+  <div id="tensp5"><a href="#" class="linkopacity">
+          <img src="../img/exo7.jpg"  width="200px"  height="200px" />
+          - EXO<br />600.000đ<br />
+          </a>
+            <a href="dương link trang chon sp hoc sp da dk bỏ vào gio" ><br/><img src="../img/nutmua.jpg"width="120px" height="40px" />
+            </a>
+  </div>
+       <div id="tensp6"><a href="#" class="linkopacity">
+          <img src="../img/exo6.jpg"   width="200px" height="200px" />
+          <br/>
+          XOXO - EXO<br />600.000đ<br />
+          </a>
+            <a href="dương link trang chon sp hoc sp da dk bỏ vào gio" ><br/><img src="../img/nutmua.jpg"width="120px" height="40px" />
+            </a>
+       </div>
+       <div id="tensp7"><a href="#" class="linkopacity">
+          <img src="../img/exo7.jpg"   width="200px" height="200px" />
+          <br/>
+          OVERDOSE -EXO<br />600.000đ
+          </a>
+            <a href="dương link trang chon sp hoc sp da dk bỏ vào gio" ><br/><img src="../img/nutmua.jpg"width="120px" height="40px" />
+            </a>
+       </div>
+        <div id="tensp8"><a href="#" class="linkopacity">
+          <img src="../img/exo8.jpg"   width="200px" height="200px" />
+          <br/>
+          The War - EXO<br />600.000đ
+          </a>
+            <a href="dương link trang chon sp hoc sp da dk bỏ vào gio" ><br/><img src="../img/nutmua.jpg"width="120px" height="40px" />
+            </a>
+       </div>
+        <div id="tensp9"><a href="#" class="linkopacity">
+          <img src="../img/exo9.jpg"   width="200px" height="200px" />
+          <br/>
+          MAMA - EXO<br />600.000đ<br />
+          </a>
+            <a href="dương link trang chon sp hoc sp da dk bỏ vào gio" ><br/><img src="../img/nutmua.jpg"width="120px" height="40px" />
+            </a>
+       </div>
+        <div id="chuyentrang">
+          <div id="pre"><a href="albumexo.html">< Pre </a></div>
+        		<div id="sotrang"><a href="albumexo.html">1</a>
+                | <strong> 2 </strong>| 
+                </div>
+        </div>
+    
+</div>
+</div>
+</body>
+</html>

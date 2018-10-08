@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ng-app="app" xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<script src = "js/app11.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+a {
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<!--<body ng-app = "myModule" ng-controller = "myControllerbb">
+	<nav class = "navbar navbar-default">
+		<div class = "container-fluid">
+		</div>
+	</nav>-->
+<div ng-app="app">
+    <div ng-controller="myControllerbb" class="container">
+        <div class="text-center">
+            <h1>AngularJS - Pagination Example with logic like Google</h1>
+
+            <!-- items being paged -->
+            <div id = "product">
+                <div ng-repeat ="product in products">
+    				
+              		<img src="{{product.p_image}}"  />
+                	<h5>{{product.p_name}}</h5>
+             		<center> GIÁ: {{product.p_price}} VNĐ</center>
+                   
+    				<center> <a href="#nutmua" class="login-window button" button type  ng-click = "add_cart(product)"> Mua Ngay </a></center> 
+           		</div>
+        </div>
+
+           <!--/* <div ng-repeat="item in products">Item {{p_id}}</div>*/-->
+            
+            <!-- pager -->
+            <ul ng-if="vm.pager.pages.length" class="pagination">
+                <li ng-class="{disabled:vm.pager.currentPage === 1}">
+                    <a ng-click="vm.setPage(1)">First</a>
+                </li>
+                <li ng-class="{disabled:vm.pager.currentPage === 1}">
+                    <a ng-click="vm.setPage(vm.pager.currentPage - 1)">Previous</a>
+                </li>
+                <li ng-repeat="page in vm.pager.pages" ng-class="{active:vm.pager.currentPage === page}">
+                    <a ng-click="vm.setPage(page)">{{page}}</a>
+                </li>                
+                <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+                    <a ng-click="vm.setPage(vm.pager.currentPage + 1)">Next</a>
+                </li>
+                <li ng-class="{disabled:vm.pager.currentPage === vm.pager.totalPages}">
+                    <a ng-click="vm.setPage(vm.pager.totalPages)">Last</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+    <div class="credits text-center">
+        <p>
+            <a href="http://jasonwatmore.com/post/2016/01/31/AngularJS-Pagination-Example-with-Logic-like-Google.aspx" target="_top">AngularJS - Pagination Example with logic like Google</a>
+        </p>
+        <p>
+            <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
